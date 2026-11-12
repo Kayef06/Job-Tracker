@@ -1,0 +1,141 @@
+{
+  "jobs": [
+    {
+      "id": "job-1",
+      "company": "Google",
+      "role": "Frontend Developer",
+      "status": "interview",
+      "appliedOn": "10/10/2026",
+      "location": "banglore"
+    },
+    {
+      "id": "job-2",
+      "company": "Microsoft",
+      "role": "Backend Developer",
+      "status": "rejected",
+      "appliedOn": "10/10/2026",
+      "location": "Chennai"
+    },
+    {
+      "id": "job-3",
+      "company": "TCS",
+      "role": "Frontend Developer",
+      "status": "applied",
+      "appliedOn": "10/10/2026",
+      "location": "Chennai"
+    },
+    {
+      "id": "job-4",
+      "company": "Zepto",
+      "role": "Backend Developer",
+      "status": "Interview",
+      "appliedOn": "2026-11-04",
+      "location": "Chennai"
+    },
+    {
+      "id": "106",
+      "company": "HCL",
+      "role": "Frontend Developer",
+      "status": "applied",
+      "appliedOn": "10/10/2026",
+      "location": "Hyderabad"
+    },
+    {
+      "id": "107",
+      "company": "Amazon",
+      "role": "Full Stack Developer",
+      "status": "interview",
+      "appliedOn": "11/10/2026",
+      "location": "Bangalore"
+    },
+    {
+      "id": "108",
+      "company": "Infosys",
+      "role": "Software Developer",
+      "status": "applied",
+      "appliedOn": "11/10/2026",
+      "location": "Chennai"
+    },
+    {
+      "id": "109",
+      "company": "Wipro",
+      "role": "React Developer",
+      "status": "rejected",
+      "appliedOn": "12/10/2026",
+      "location": "Hyderabad"
+    },
+    {
+      "id": "110",
+      "company": "Accenture",
+      "role": "UI Developer",
+      "status": "interview",
+      "appliedOn": "12/10/2026",
+      "location": "Pune"
+    },
+    {
+      "id": "111",
+      "company": "IBM",
+      "role": "Backend Developer",
+      "status": "applied",
+      "appliedOn": "13/10/2026",
+      "location": "Bangalore"
+    },
+    {
+      "id": "112",
+      "company": "Flipkart",
+      "role": "Frontend Developer",
+      "status": "applied",
+      "appliedOn": "13/10/2026",
+      "location": "Bangalore"
+    },
+    {
+      "id": "113",
+      "company": "Zoho",
+      "role": "Web Developer",
+      "status": "interview",
+      "appliedOn": "14/10/2026",
+      "location": "Chennai"
+    },
+    {
+      "id": "114",
+      "company": "Capgemini",
+      "role": "Software Engineer",
+      "status": "rejected",
+      "appliedOn": "14/10/2026",
+      "location": "Mumbai"
+    },
+    {
+      "id": "115",
+      "company": "Oracle",
+      "role": "Java Developer",
+      "status": "applied",
+      "appliedOn": "15/10/2026",
+      "location": "Hyderabad"
+    },
+    {
+      "id": "116",
+      "company": "Adobe",
+      "role": "UI/UX Developer",
+      "status": "interview",
+      "appliedOn": "15/10/2026",
+      "location": "Noida"
+    },
+    {
+      "id": "117",
+      "company": "Paytm",
+      "role": "React Developer",
+      "status": "interview",
+      "appliedOn": "16/10/2026",
+      "location": "Noida"
+    },
+    {
+      "id": "118",
+      "company": "Swiggy",
+      "role": "Full Stack Developer",
+      "status": "rejected",
+      "appliedOn": "16/10/2026",
+      "location": "Bangalore"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

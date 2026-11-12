@@ -1,0 +1,242 @@
+@import "tailwindcss";
+
+/* Global */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+}
+
+/* Main themes */
+main.light {
+  @apply min-h-screen bg-slate-50 text-slate-800;
+}
+
+main.dark {
+  @apply min-h-screen bg-slate-950 text-slate-100;
+}
+
+/* Header */
+.app-header {
+  @apply sticky top-0 z-50 flex flex-wrap items-center justify-between gap-5
+  border-b border-slate-200 bg-white px-8 py-5 shadow-sm;
+}
+
+main.dark .app-header {
+  @apply border-slate-800 bg-slate-900;
+}
+
+.app-header h1 {
+  @apply text-2xl font-bold tracking-tight text-blue-600;
+}
+
+.app-header a {
+  @apply text-sm font-medium text-slate-600 no-underline transition;
+}
+
+.app-header a:hover {
+  @apply text-blue-600;
+}
+
+main.dark .app-header a {
+  @apply text-slate-300;
+}
+
+.app-header button {
+  @apply rounded-lg bg-blue-600 px-4 py-2 text-sm font-semibold
+  text-white transition hover:bg-blue-700;
+}
+
+/* Page layout */
+main > div {
+  @apply mx-auto w-full max-w-7xl px-6 py-8;
+}
+
+/* Sections */
+section {
+  @apply space-y-6;
+}
+
+section h2 {
+  @apply text-2xl font-bold tracking-tight;
+}
+
+/* Page header */
+section > div:first-child h2 {
+  @apply text-2xl font-bold;
+}
+
+section > div:first-child p {
+  @apply mt-2 text-sm text-slate-500;
+}
+
+main.dark p {
+  @apply text-slate-400;
+}
+
+/* Summary cards */
+.summary-grid {
+  @apply grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3;
+}
+
+.summary-grid > div {
+  @apply rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition
+  hover:-translate-y-1 hover:shadow-md;
+}
+
+main.dark .summary-grid > div {
+  @apply border-slate-800 bg-slate-900;
+}
+
+/* Application form */
+#job-form-section {
+  @apply rounded-2xl border border-slate-200 bg-white p-6 shadow-sm;
+}
+
+main.dark #job-form-section {
+  @apply border-slate-800 bg-slate-900;
+}
+
+#job-form-section form {
+  @apply grid grid-cols-1 gap-4 sm:grid-cols-2;
+}
+
+#job-form-section label {
+  @apply mb-1 block text-sm font-semibold text-slate-700;
+}
+
+main.dark #job-form-section label {
+  @apply text-slate-300;
+}
+
+#job-form-section input,
+#job-form-section select {
+  @apply w-full rounded-lg border border-slate-300 bg-white px-4 py-3
+  text-sm text-slate-800 outline-none transition
+  focus:border-blue-500 focus:ring-2 focus:ring-blue-100;
+}
+
+main.dark #job-form-section input,
+main.dark #job-form-section select {
+  @apply border-slate-700 bg-slate-800 text-white;
+}
+
+#job-form-section form > div {
+  @apply flex gap-3 sm:col-span-2;
+}
+
+/* Buttons */
+button {
+  @apply cursor-pointer;
+}
+
+#job-form-section button {
+  @apply rounded-lg bg-blue-600 px-5 py-3 text-sm font-semibold
+  text-white transition hover:bg-blue-700;
+}
+
+#job-form-section button[type="button"] {
+  @apply bg-slate-200 text-slate-700 hover:bg-slate-300;
+}
+
+/* Applications section */
+.jobs-section {
+  @apply mt-10 space-y-5;
+}
+
+/* Search and filters */
+.jobs-section section > div:first-child {
+  @apply grid grid-cols-1 gap-3 sm:grid-cols-3;
+}
+
+.jobs-section input,
+.jobs-section select {
+  @apply w-full rounded-lg border border-slate-300 bg-white px-4 py-3
+  text-sm outline-none focus:border-blue-500 focus:ring-2 focus:ring-blue-100;
+}
+
+main.dark .jobs-section input,
+main.dark .jobs-section select {
+  @apply border-slate-700 bg-slate-900 text-white;
+}
+
+/* Job cards */
+article {
+  @apply flex flex-col gap-4 rounded-xl border border-slate-200
+  bg-white p-5 shadow-sm transition hover:shadow-md
+  sm:flex-row sm:items-center sm:justify-between;
+}
+
+main.dark article {
+  @apply border-slate-800 bg-slate-900;
+}
+
+article h2 {
+  @apply text-lg font-bold text-slate-900;
+}
+
+main.dark article h2 {
+  @apply text-white;
+}
+
+article button {
+  @apply rounded-lg bg-slate-100 px-4 py-2 text-sm font-semibold
+  text-slate-700 transition hover:bg-slate-200;
+}
+
+article button:first-of-type {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+article button:last-of-type {
+  @apply bg-red-50 text-red-600 hover:bg-red-100;
+}
+
+/* Status badges */
+.status-badge {
+  @apply inline-flex rounded-full px-3 py-1 text-xs font-semibold;
+}
+
+.status-applied {
+  @apply bg-blue-100 text-blue-700;
+}
+
+.status-interview {
+  @apply bg-amber-100 text-amber-700;
+}
+
+.status-rejected {
+  @apply bg-red-100 text-red-700;
+}
+
+/* Details page */
+main section a {
+  @apply inline-block text-sm font-semibold text-blue-600 hover:underline;
+}
+
+/* Footer */
+footer {
+  @apply border-t border-slate-200 bg-white px-6 py-6 text-center text-sm text-slate-500;
+}
+
+main.dark footer {
+  @apply border-slate-800 bg-slate-900;
+}
+
+/* Responsive */
+/* @media (max-width: 640px) {
+  .app-header {
+    @apply justify-center px-4;
+  }
+
+  main > div {
+    @apply px-4 py-5;
+  }
+
+  article button {
+    @apply px-3;
+  }
+}; */
